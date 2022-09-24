@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacen Saludable</title>
+    <link rel="icon" href="./imagenes/1x/logo-grande.png">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+   
+    <header class="container-fluid">
+        <div class="logo">
+            <img src="./imagenes/1x/logo-grande.png" alt="logo">
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./page/nosotros.html">Nosotros</a></li>
+                <li><a href="./page/productos.html">Productos</a></li>
+                <li><a href="./page/blog.html">Blog</a></li>
+                <li><a href="./page/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-fluid">    
+        <!-- fotos del carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active tamañoImagen">
+                <img src="./imagenes/banner-not-co.jpg.crdownload" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item tamañoImagen">
+                <img src="./imagenes/HoloFood-banners-08.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item tamañoImagen">
+                <img src="./imagenes/portada-con-boton.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div class="productosTitulo">
+            <h2>Destacados de la semana</h2>
+        </div>
+
+        <section class="row productos">
+            <div class="col-sm-12 col-lg-3 productos__destacados">
+                <img src="./imagenes/foto productos/almendra-front.png" alt="Leche de almendras Amande" width="100px">
+                <p>Leche de almendras Amande</p>
+            </div>
+            <div class="col-sm-12 col-lg-3 productos__destacados">
+                <img src="./imagenes/foto productos/muzzalmendra.jpg" alt="Muzzalmendra Felices las vacas" width="100px">
+                <p>Muzzalmendra Felices las vacas</p>
+            </div>
+            <div class="col-sm-12 col-lg-3 productos__destacados">
+                <img src="./imagenes/foto productos/waka-legumbres.jpg" alt="Fideos de legumbres Wakas" width="100px">
+                <p>Fideos de legumbres Wakas</p>
+            </div>
+            <div class="col-sm-12 col-lg-3 productos__destacados">
+                <img src="./imagenes/foto productos/alfajor-cerroazul.jpg" alt="Alfajor sin tacc Cerro Azul" width="100px">
+                <p>Alfajor sin tacc Cerro Azul</p>
+            </div>
+            
+        </section>
+        <div class="botonProductos">
+            <a href="./page/productos.html">Ver más</a>
+        </div>
+    </main>  
+    
+    <!--fotos y links a las notas-->
+    <section class="container-fluid row blog">
+        <article class="col-sm-12 col-lg-6 blogInicio">
+            <div class="foto">
+                <a href="./page/blog.html"><img src="./imagenes/maca.jpg" alt="maca"></a>
+            </div>
+            <div class="texto">    
+                <h2>Maca: propiedades, usos y beneficios.</h2>
+                <p>Las propiedades y beneficios de la maca andina se encuentran en sus raíces de donde es extraído el extracto de maca. La maca contiene proteínas, hidratos de carbono, calcio, fosforo, yodo, hierro, Vitamina B, Vitamina C, por ellos sus propiedades energizantes y nutrientes.</p>
+            </div>
+        </article>
+        <article class="col-sm-12 col-lg-6 blogInicio">
+            <div class="foto">
+                <a href="./page/blog.html"><img src="./imagenes/pudin-de-chia-basico-chia-pudding-9-750x501.jpg" alt="maca"></a>
+            </div>
+            <div class="texto">    
+                <h2>Recetas: pudin de chía.</h2>
+                <p>¿Todavía no habéis probado el pudin de chía? Esta vez, las semillas de chía han llegado a los mercados para quedarse. Además de ser una gran fuente de fibra, las semillas de chia son ricas en antioxidantes, hierro y calcio.</p>
+            </div>
+        </article>
+    </section>
+          
+    <footer class="pieDePagina text-black">
+        <div class="container">
+            <nav class="row">
+                <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+                    <img src="./imagenes/1x/logo-grande.png" alt="logo" class="img-logo mr-2">
+                </a>
+                <ul class="col-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">Nuestra página</li>
+                    <li><a href="#" class="text-reset decoracionTexto">Inicio</a></li>
+                    <li><a href="./page/nosotros.html" class="text-reset decoracionTexto">Nosotros</a></li>
+                    <li><a href="./page/productos.html" class="text-reset decoracionTexto">Productos</a></li>
+                    <li><a href="./page/blog.html" class="text-reset decoracionTexto ">Blog</a></li>
+                    <li><a href="./page/contacto.html" class="text-reset decoracionTexto">Contacto</a></li>
+                </ul> 
+                <ul class="col-3 list-unstyled">
+                    <li class="font-weight-bold text-uppercase">
+                        <a href=""><img src="./imagenes/instagram.png" alt="instagram" class="redesSociales"></a>
+                        <a href=""><img src="./imagenes/whatsapp-logo-4.png" alt="whatsapp" class="redesSociales"></a>
+                    </li>
+                </ul>                 
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
