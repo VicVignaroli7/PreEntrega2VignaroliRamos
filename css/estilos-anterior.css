@@ -22,6 +22,9 @@ header {
     top: 0;
 }
 
+.colorFondo {
+    background-color: #BDD4A8;
+}
 .logo img {
     height: 60px;
     padding-left: 30px;
