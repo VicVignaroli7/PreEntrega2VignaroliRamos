@@ -1,0 +1,212 @@
+body {
+    font-family: "Open Sans", sans-serif ;
+}
+
+/*encabezado*/
+header {
+    display: flex;
+    height: 90px;
+    @include color-fondo;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    .item {
+        list-style: none;
+        display: inline-block;
+    }
+        .link {
+            text-decoration: none;
+            color: black;
+            padding-right: 20px;
+            &:hover {
+                color: white; 
+            }
+        }
+}
+
+.colorFondo {
+    @include color-fondo;
+}
+.logo img {
+    height: 60px;
+    padding-left: 30px;
+}
+
+.tamañoImagen {
+    height: 500px;
+}
+
+/*productos inicio*/
+.productos {
+   .espacio {
+    margin: 2rem;
+   }
+   .letra {
+    font-size: $size-parrafo;
+    font-family: $fuente-principal;
+    font-weight: map-get($fuentes-grosor, bold);
+    text-align: center;
+   }
+}
+/*link a la pagina productos*/
+.botonProductos {
+    text-align: center;
+    padding: 50px;
+    .botonProductos__a {
+        text-decoration: none;
+        &:link {
+            text-decoration: none;
+            color: #BDD4A8;
+            padding: 14px 25px;
+            text-align: center;
+            background-color: white;
+        }
+        &:visited {
+           color: black; 
+        }
+        &:hover {
+            text-decoration: none;
+            color: white;
+            @include color-fondo;
+            border: #BDD4A8 1px solid;
+            font-size: 2rem;
+        }
+    }
+
+    
+}
+.margen {
+    margin-top: 20px;
+}
+
+.button{
+    @include color-fondo;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+/*notas al blog*/
+.blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .blogInicio {
+        display: inline-block;
+        .foto {
+            img {
+                width: 70%;
+                height: 300px;
+            }
+        }
+        .texto {
+            width: 70%;
+            margin: 30px 30px;
+        }
+    }
+}
+
+.foto {
+    width: 500px;
+    height: 500px;
+}
+
+/*main nosotros*/
+main {
+    .nosotros {
+        .nosotros__texto{
+            text-align: center;
+            .nosotros__texto__titulo {
+                font-size: 2.4em;
+            }
+            .nosotros__texto__parrafo {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+/*footer*/
+.piePagina {
+    width: 100%;
+    @include color-fondo;
+    .grupoUno {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .caja {
+            figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                img {
+                    width: 150px;
+                }
+            }
+            h2 {
+                color: black;
+                margin-bottom: 25px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            .redes {
+        
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: black;
+                    margin-right: 10px;
+                    background-color: #fff;
+                    text-align: center;
+                    border-radius: 5px;
+                    &:hover {
+                        text-decoration: none;
+                        color:#BDD4A8
+                    }
+                }
+            }
+        }
+    }
+    .grupoDos {
+        padding: 15px 10px;
+        text-align: center;
+        small {
+            font-size: 15px;
+        }
+    }
+}
+.mainBlog{
+    .colorTexto {
+        color: $color-texto;
+        @extend .letra
+    }
+}
+
+
+@media screen  and (max-width:800px) {
+    .piePagina {
+        .grupoUno {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 35px;
+        padding: 35px 0px;
+        }    
+    } 
+}  
