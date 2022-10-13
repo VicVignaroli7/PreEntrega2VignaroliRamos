@@ -108,6 +108,10 @@ main .nosotros .nosotros__texto {
   main .nosotros .nosotros__texto .nosotros__texto__parrafo {
     font-size: 1.2em; }
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem; } }
+
 /*footer*/
 .piePagina {
   width: 100%;

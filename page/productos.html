@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almacen Saludable</title>
+    <link rel="icon" href="../imagenes/1x/logo-grande.png">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
@@ -55,7 +56,7 @@
         </section>
         <div class="row">
           <div class="col-xl-5 col-sm-12 dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn ms-5 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               Categorías
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -65,7 +66,7 @@
             </ul>
           </div>
         
-          <form class="col-xl-6 col-sm-12 d-flex">
+          <form class="col-xl-4 col-sm-12 d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
@@ -76,7 +77,47 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../imagenes/foto productos/brocoli-nutree-2.jpg" class="d-block w-100" alt="Medallón de quinoa y brócoli">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/foto productos/criolla-nutree.jpg" class="d-block w-100" alt="Medallón de quinoa criollo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/foto productos/espinaca-nutree.jpg" class="d-block w-100" alt="Medallón de quinoa y espinaca">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/foto productos/hongos-nutree.jpg" class="d-block w-100" alt="Medallón de quinoa y hongos">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../imagenes/foto productos/lentejas-nutree.jpg" class="d-block w-100" alt="Medallón de quinoa y lentejas">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Medallón de Quinoa Nutree</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../imagenes/foto productos/leche-almendras-amande.jpg" alt="Leche de almendras" width="100%" height="225">
                   <div class="card-body">
                     <p class="card-text">Leche de almendras Amande</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -90,23 +131,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/alfajor-cerro_azul.jpg" alt="Alfajor Cerro Azul" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al carrito</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
-                  <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Alfajor Cerro Azul</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -119,9 +146,9 @@
       
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/fideos_legumbres-wakas.jpg" alt="Fideos de legumbres Wakas" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Fideos de legumbres Wakas</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -133,9 +160,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/muzzalmendra-flv.jpg" alt="Muzzalmendra Felices las Vacs" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Queso de almendras Felices las Vacas</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -147,9 +174,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/pasta-fit_fruits.jpg" alt="Pasta de maní Fit Fruits" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Pasta de maní Fit Fruits</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -161,9 +188,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/mermelada-natali.jpg" alt="Mermelada Natalí" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Mermelada Natalí</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -175,9 +202,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/fideos-orox.jpg" alt="Fideos de arroz Orox" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Fideos de arroz Orox</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -189,9 +216,9 @@
               </div>
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="../imagenes/foto productos/almendra-front.png" alt="Leche de almendras" width="100%" height="225">
+                  <img src="../imagenes/foto productos/stevia-kony.jpg" alt="Stevia Kony" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Leche de almendras Amande</p>
+                    <p class="card-text">Stevia Kony</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
@@ -238,6 +265,6 @@
         </div>
       </footer>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
