@@ -1,5 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif ;
+    min-height: 100vh;
 }
 
 /*encabezado*/
@@ -63,11 +64,11 @@ header {
             background-color: white;
         }
         &:visited {
-           color: black; 
+           color: $color-texto; 
         }
         &:hover {
             text-decoration: none;
-            color: white;
+            color: $color-texto-secundario;
             @include color-fondo;
             border: #BDD4A8 1px solid;
             font-size: 2rem;
@@ -83,7 +84,7 @@ header {
 .button{
     @include color-fondo;
     border: none;
-    color: white;
+    color: $color-texto-secundario;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -132,8 +133,42 @@ main {
     }
 }
 
+/*main blog*/
+.mainBlog {
+    .imagenFondo {
+        background-image: url("../imagenes/maca-fondo.jpg");
+        width: 100%;
+    }
+    .colorTextoBlanco {
+        color: $color-texto-secundario;
+    } 
+}
 
-  @media (min-width: 768px) {
+/*botones de la página productos*/
+.botonAProductos {
+    .aProductos {
+        text-decoration: none;
+        color: $color-texto;
+    }
+}
+
+.mainEspacio {
+    min-height: 100vh;
+}
+
+/*pagina de productos individuales*/
+.productosInfo {
+    .enlaceProductos {
+        color: $color-texto;
+        &:hover {
+            color: $color-texto-secundario;
+        }
+    }
+    .botonProductos:hover {
+        background-color: $color-principal;
+    }
+}
+ @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }

@@ -5,7 +5,8 @@
   padding: 0; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh; }
 
 /*encabezado*/
 header {
@@ -107,6 +108,31 @@ main .nosotros .nosotros__texto {
     font-size: 2.4em; }
   main .nosotros .nosotros__texto .nosotros__texto__parrafo {
     font-size: 1.2em; }
+
+/*main blog*/
+.mainBlog .imagenFondo {
+  background-image: url("../imagenes/maca-fondo.jpg");
+  width: 100%; }
+
+.mainBlog .colorTextoBlanco {
+  color: white; }
+
+/*botones de la página productos*/
+.botonAProductos .aProductos {
+  text-decoration: none;
+  color: black; }
+
+.mainEspacio {
+  min-height: 100vh; }
+
+/*pagina de productos individuales*/
+.productosInfo .enlaceProductos {
+  color: black; }
+  .productosInfo .enlaceProductos:hover {
+    color: white; }
+
+.productosInfo .botonProductos:hover {
+  background-color: #BDD4A8; }
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
